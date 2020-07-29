@@ -35,10 +35,20 @@ helpers.packageESM({
       REPO_ROOT,
       'node_modules/vscode-json-languageservice/lib/esm/services/jsonSchemaService.js'
     ),
+    'vscode-json-languageservice/lib/umd/services/jsonDefinition': path.join(
+      REPO_ROOT,
+      'node_modules/vscode-json-languageservice/lib/esm/services/jsonDefinition.js'
+    ),
+    'vscode-json-languageservice/lib/umd/services/jsonCompletion': path.join(
+      REPO_ROOT,
+      'node_modules/vscode-json-languageservice/lib/esm/services/jsonCompletion.js'
+    ),
     'yaml-language-server/out/server/src/languageservice/yamlLanguageService': path.join(
       REPO_ROOT,
       'node_modules/yaml-language-server/out/server/src/languageservice/yamlLanguageService.js'
     ),
+    prettier: path.join(REPO_ROOT, 'out/esm/fillers/prettier.js'),
+    buffer: path.join(REPO_ROOT, 'out/esm/fillers/buffer.js'),
   },
   resolveSkip: ['monaco-editor', 'monaco-editor-core', 'js-yaml'],
   destinationFolderSimplification: {
